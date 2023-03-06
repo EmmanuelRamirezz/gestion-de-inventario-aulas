@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventario</title>
+  <link rel="shortcut icon" href="img/icono.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+</head>
+<header>
+  <div class="header">
+    <img src="img/header.png" alt="Banner">
+  </div>
+</header>
+<body>
+  <div class="inventario__title">
+    <h1>Gestion de Inventario</h1>
+  </div>
+  
+  
+<div class="contenedor-cocinas">
+  <!-- boton atras -->
+  <input type="image" src="img/atras.png" class="btnAtras" id="btnAtras" onclick="btnAtras()">
+  
+  <!-- Eleccion -->
+  <div class="eleccion" id="divEleccion">
+    <h2>¿Qué desea realizar?</h2>
+    <div>
+      <button class="boton2" onclick="botonA()" id="botonA">Agregar elemento</button>
+
+      <button class="boton2" id="botonB" onclick="botonB()">Buscar elemento</button>
+    </div>
+  </div>
+  <!-- Agregador -->
+ 
+    <h2 class="instrucciones inactivePlus"  id="instruccionA" >Ingrese los datos del elemento a agregar</h2>
+ 
+  <div class="buscador inactivePlus">  
+    <form id="task-form" name="form_almacen">
+      <label for="title" >Nombre:</label> 
+      <input type="text" placeholder="Nombre del articulo" id="task-title" name="nombre">
+      
+      <label for="description" >Ubicación:</label>
+      <input type="text" placeholder="Ubicación del articulo" id="task-description" name="ubicacion">
+
+      <label for="unidades" >Unidades:</label>
+      <input type="text" placeholder="Unidades disponibles" id="unidades-disponibles" name="unidades">
+
+      <input type="image" src="img/salvar.png" id="btn-task-save" height="60px" width="60px">
+    </form>
+</div>
+  <!-- Filtro -->
+  <h2 class="instrucciones inactivePlus" id="instruccionB">Ingrese un campo que quiera a buscar</h2>
+<div class="filtro inactivePlus" id="divFiltro">
+  <label for="title" >Nombre:</label> 
+    <input type="text" placeholder="Nombre del articulo" id="Fnombre" name="nombre" class="medidas" onchange="bloqueoN()"> 
+    
+    <label for="description" >Ubicación:</label>
+    <input type="text" placeholder="Ubicación del articulo" id="Fubicacion" name="ubicacion" class="medidas" onchange="bloqueoU()">
+
+    <label for="unidades" >Unidades:</label>
+    <input type="text" placeholder="Unidades disponibles" id="Funidades" name="unidades" class="medidas" onchange="bloqueoUN()">
+
+    <input type="image" src="img/buscar.png" id="btnBuscar" height="60px" width="60px">
+</div>
+
+
+
+<h2>Material total de inventario</h2>
+
+<div class="contenedor-indicaciones">
+  <div class="indicacion">Nombre</div>
+  <div class="indicacion">Ubicación</div>
+  <div class="indicacion">Cantidad disponible</div>
+  <div class="indicacion">Opciones</div>
+</div>
+
+  <div id="tasks-container">
+    
+  </div>
+
+
+      <!--Botones-->
+  <div class="Cbotones">
+    <a href="menu.html" class="regresar">
+     <img  src="img/regreso.png" alt="Cerrar sesion">
+     <h2 class="regresar-texto">Menú</h2>
+    </a>
+
+    <!--Grafica-->
+    <div class="grafica" id="grafica" onclick="estadisticasG()">
+      <img  src="img/grafica.png" alt="img grafica">
+      <h2 class="regresar-texto">Graficas</h2>
+    </div>
+  </div>
+
+  
+    
+</div>
+    
+
+    <!-- Overlay Datos -->
+<div class="overlay" id="overlayG">
+  <div class="popupG" id="popupG">
+    
+     <form>
+       <div class="si">
+          <center>
+            <div class="contenedor-datos">
+              <h2 class="negro">Total de articulos en inventario</h2>
+              <input type="text" id="Tarticulos" readonly="readonly">
+
+            <canvas id="myChartG" width="650px" height="450px"></canvas>
+   
+          </div>
+        </center> 
+      </div>
+      <div class="botones-chidos">
+      <a href="#" class="btn-popup" id="btn-aceptarG">Aceptar</a>
+     </div>
+     </form>
+  </div>
+</div>
+  <script type="module" src="js/index.js"></script>
+  <script src="js/scripts.js"></script>
+
+
+
+ 
+  
+  
+  
+
+</body>
+
+<footer div class="footer">
+  <img src="img/footer.png" alt="footer">
+</footer>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú Principal</title>
+  <link rel="shortcut icon" href="img/icono.ico">
+
+  
+ <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:ital,wght@0,700;1,400&  family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header>
+    <div class="header">
+      <img src="img/header.png" alt="Banner">
+    </div>
+  </header>
+  <main>
+
+    <h1>Bienvenido, ¿Qué desea realizar?</h1>
+    <div class ="salir" id="btn-salir">
+      <a href="#">
+       <img class="cerrar" src="img/cerrar-sesion.png" alt="Cerrar sesion">
+      </a>
+    </div>
+    <div class="contenedor">
+    
+      <div class="opcionA">
+        <a href="cocinas.html">
+         <img src="img/cocina.jpg" alt="Cocina" class="imagenes_menu">
+         <h2 class="texto">Ver Cocinas Disponibles</h2>
+        </a>
+      </div>
+
+      <div class="opcionA">
+        <a href="almacen.html">
+          <img src="img/almacen.jpg" alt="Almacen" class="imagenes_menu">
+          <h2 class="texto">Ver Inventario</h2>
+         </a>
+      </div>
+    </div>
+   
+    <!--overlay ------------------------------------------------------------------>
+    <div class="overlay" id="overlay">
+      <div class="popupS" id="popupS">
+        <h1 class="negro">Salir</h1>
+         <form class="PopupSalir">
+           <div>
+            
+            <h4>¿Está seguro que quieres salir?</h4>
+           </div>
+           <div class="botones-chidos">
+
+            <a href="index.html" class="btn-popup" id="btn-aceptarS">Aceptar</a>
+    
+            <a href="#" class="btn-popup" id="btn-cerrarS">Cancelar</a>
+          </div>
+         </form>
+      </div>
+   </div>
+
+  </main>
+ <footer>
+  <div class="footer4">
+    <img src="img/footer.png" alt="footer">
+ </div>
+ </footer>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

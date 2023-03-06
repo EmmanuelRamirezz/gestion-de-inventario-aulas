@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema Gastronomia</title>
+  <link rel="shortcut icon" href="img/icono.ico">
+
+  
+ <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:ital,wght@0,700;1,400&  family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header>
+    <div class="header">
+      <img src="img/header.png" alt="Banner">
+    </div>
+  </header>
+  <main>
+    <h1>Sistema gestor de inventario</h1>
+   <div class="contenedor-login">
+     <form name="form">
+       <!-- imagen -->
+        <div>
+          <img class="usuario" src="img/user.jpg" alt="usuario">
+        </div>
+       
+       <h2>Ingrese sus datos de acceso</h2>
+
+       <!--correo-->
+       <label for="correo">Correo electronico</label>
+       <input type="email" placeholder="Ingrese su correro electronico" class="campo" name="correo" value="pv18021389@vallarta.tecmm.edu.mx" required>
+
+       <!-- contraseña -->
+       <label for="contraseña">Contraseña</label>
+       <input type="password" placeholder="Ingrese su contraseña"
+       class="campo" name="contraseña" value="123" required>
+       <a href="mailto:pv18021389@vallarta.tecmm.edu.mx?subject=Quiero recuperar mi contraseña">Recuperar contraseña</a>
+
+        <!-- boton -->
+       <input type="submit" value="Acceder"
+       class="boton" onclick="validar()">
+       
+       
+     </form>
+   </div>
+
+ </main>
+ <footer >
+   <div class="footer3">
+     <img  src="img/footer.png" alt="footer">
+  </div>
+ </footer>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

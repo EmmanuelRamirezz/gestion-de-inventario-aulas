@@ -1,0 +1,882 @@
+html{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.header{
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; 
+}
+img{
+  max-width: 100%;
+ 
+}
+.inventario__title{
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+}
+h1{
+  text-align: center;
+  color: rgb(117, 117, 117);
+  margin: 10px auto;
+  font-size: 1.5rem;
+}
+.contenedor-login{
+  background-color:darkcyan ;
+  height: 500px;
+  width: 30%;
+  color: white;
+  padding: 1rem 3rem;
+  border: 5px solid rgb(132,28,156);
+  margin: 0 auto;
+}
+.contenedor-login div{
+  display: flex;
+  justify-content: center;
+}
+.usuario{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border:  solid 3px black;
+  margin: 0 auto;
+  margin-top: -30px;
+  margin-bottom: 30px;
+  
+}
+h2{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  
+  color: white;
+  margin-top: -11px;
+  
+}
+
+label{
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-left: 15px;
+  padding: 0;
+}
+input{
+  display: block;
+}
+.campo{
+  margin: 15px;
+  width: 90%;
+  height: 1.5rem;
+}
+.boton{
+  background-color:rgb(132,28,156);
+  text-align: center;
+  height: 60px;
+  width: 120px;
+  border: 3px solid white;
+  color: white;
+  font-size: 1.3rem;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 10px;
+  margin: 40px auto;
+}
+.boton:hover{
+  cursor: pointer;
+  transform: scale(1.05, 1.05);
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+  
+}
+a{
+  text-decoration: none;
+  color: white;
+  margin-left: 15px;
+}
+a:hover{
+  color: black;
+}
+footer{
+  display: flex;
+}
+.footer{
+  max-width: 1100px;
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;  
+  width: 100%;
+
+
+}
+.footer2{
+  max-width: 1100px;
+  /* margin: 0 auto; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;  
+  width: 100%;
+  display: flex;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 50px;
+}
+.footer3{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;  
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer4 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;  
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto; 
+}
+/* ----Menú----------------- */
+
+.texto{
+  margin: 1rem;
+  color: black;
+}
+
+.contenedor {
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+  gap: 2rem;
+}
+.salir{
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  width: 90%;
+}
+.cerrar{
+  width: 25px;
+}
+.opcionA{
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+}
+.opcionA a {
+  margin: 0 auto;
+  width: 100%;
+}
+.imagenes_menu{
+  width: 100%;
+  height: 230px;
+  border-radius: 15px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.imagenes_menu:hover{
+  transform: scale(1.05, 1.05);
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+}
+.vinculo{
+  color: black;
+}
+.PopupSalir{
+  margin-top: 0px;
+}
+/* ---------Cocinas--------------- */
+.contenedor-cocinas{
+  background-color:darkcyan ;
+  color: white;
+  box-sizing: border-box;
+  /* padding: 7rem 3rem; */
+  padding: 0 2rem;
+  
+  border: 7px solid rgb(132,28,156);
+  /* telefono */
+  width: 90%;
+  min-width: 340px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+}
+h4{
+  font-size: 20px;
+}
+.disponible{
+  padding-top: 25px;
+  height: 40px;
+}
+.disponible.active{
+visibility: hidden;
+}
+.ocupado{
+  padding-top: 25px;
+  height: 40px;
+  visibility: hidden;
+}
+.ocupado.active{
+  visibility: visible;
+}
+.inactive{
+  visibility: hidden;
+}
+.inactivePlus{
+  visibility: hidden;
+  position: absolute;
+ 
+}
+
+.PRUEBA{
+  display: flex;
+}
+.modulo1, .modulo2, .modulo3, .modulo4, .modulo5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.modulo1 div, .modulo2 div, .modulo3 div, .modulo4 div, .modulo5 div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+/* COCINA 1 */
+.estado-cocina1{
+display: flex;
+align-items: center;
+gap: 5px;
+padding-left: 30px;
+visibility: hidden;
+}
+.estado-cocina1 div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+}
+.estado-cocina1 div h4{
+margin-top: 0;
+}
+.estado-cocina1.active{
+  visibility: visible;
+}
+.textSizeCocinas1{
+ height: 20px;
+ width:  70px;
+ font-family: 'Roboto', sans-serif;
+ color: white;
+ background-color:darkcyan ;
+ border: 0;
+ font-size: 20px;
+}
+.textSizeCocinas11{
+  height: 20px;
+  width:  auto;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color: transparent; 
+  border: 0;
+  font-size: 20px;
+  text-align: center;
+  align-items: top;
+}
+.textSizeHoras1{
+  height: 20px;
+  width:  72px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color:darkcyan;
+  border: 0;
+  font-size: 20px;
+}
+/* Cocina 2 */
+
+.estado-cocina2{
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  visibility: hidden;
+  gap: 5px;
+}
+.estado-cocina2.active{
+  visibility: visible;
+}
+.textSizeCocinas2{
+  height: 20px;
+  width:  70px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color:darkcyan ;
+  border: 0;
+  font-size: 20px;
+}
+.textSizeCocinas22{
+  height: 20px;
+  width:  250px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  text-align: center;
+}
+.textSizeHoras2{
+  height: 20px;
+  width:  72px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color:darkcyan;
+  border: 0;
+  font-size: 20px;
+}
+/* Cocina3 */
+.estado-cocina3{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-left: 30px;
+  visibility: hidden;
+}
+.estado-cocina3.active{
+  visibility: visible;
+}
+.textSizeCocinas3{
+  height: 20px;
+  width:  70px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color:darkcyan ;
+  border: 0;
+  font-size: 20px;
+}
+.textSizeCocinas33{
+  height: 20px;
+  width:  250px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color:transparent;
+  border: 0;
+  font-size: 20px;
+  text-align: center;
+}
+.textSizeHoras3{
+  height: 20px;
+  width:  72px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color:darkcyan;
+  border: 0;
+  font-size: 20px;
+}
+/* Cocina 4 */
+.estado-cocina4{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-left: 30px;
+  visibility: hidden;
+}
+.estado-cocina4.active{
+  visibility: visible;
+}
+.textSizeCocinas4{
+  height: 20px;
+  width:  70px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color:darkcyan ;
+  border: 0;
+  font-size: 20px;
+}
+.textSizeCocinas44{
+  height: 20px;
+  width:  250px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color:transparent;
+  border: 0;
+  font-size: 20px;
+  text-align: center;
+}
+.textSizeHoras4{
+  height: 20px;
+  width:  72px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color:darkcyan;
+  border: 0;
+  font-size: 20px;
+}
+/* Cocina 5 */
+.estado-cocina5{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-left: 30px;
+  visibility: hidden;
+}
+.estado-cocina5.active{
+  visibility: visible;
+}
+.textSizeCocinas5{
+  height: 20px;
+  width:  70px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color:darkcyan ;
+  border: 0;
+  font-size: 20px;
+}
+.textSizeCocinas55{
+  height: 20px;
+  width:  250px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  text-align: center;
+}
+.textSizeHoras5{
+  height: 20px;
+  width:  72px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color:darkcyan;
+  border: 0;
+  font-size: 20px;
+}
+
+/* fin cocinas */
+/* Datos */
+.estado-cocinaD{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 30px;
+  visibility: hidden;
+}
+.estado-cocinaD.active{
+  visibility: visible;
+}
+.textSizeCocinasD{
+  height: 20px;
+  width:  70px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color:darkcyan ;
+  border: 0;
+  font-size: 25px;
+}
+.textSizeCocinasDD{
+  height: 20px;
+  width:  250px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color:darkcyan;
+  border: 0;
+  font-size: 25px;
+}
+/* Fin Datos */
+.regresar{
+  width: 70px;
+  height: 70px;
+}
+.estadistica{
+  width: 70px;
+  height: 70px; 
+  text-align: center;
+}
+
+.flex{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 0 15px 20px 15px;
+}
+.regresar-texto{
+color: white;
+}
+
+
+/*--------Estadisticas------------------------*/
+.contenedor-estadisticas{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.imagenestadisticas{
+  height: 330px;
+  margin: 20px;
+}
+.opciones{
+  margin-top: 100px;
+}
+
+.opcion1:hover, .opcion2:hover{
+  cursor: pointer;
+}
+.opcion1{
+  border: 7px solid white;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+.opcion2{
+  border: 7px solid rgb(132,28,156);
+  border-radius: 10px;
+  margin-bottom: 3rem;
+}
+/* popup------------------------------------ */
+.popup{
+  background-color: #f8f8f8;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0.35);
+  border-radius: 3px;
+  font-family: 'Roboto', sans-serif;
+  padding: 40px;
+  width: 460px;
+  text-align: center;
+  height: 420px;
+}
+.popupD{
+  background-color: #f8f8f8;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0.35);
+  border-radius: 3px;
+  font-family: 'Roboto', sans-serif;
+  padding: 40px;
+  width: 460px;
+  text-align: center;
+  height: 560px;
+}
+
+a{
+  text-decoration: none;
+}
+.popupS{
+  background-color: #f8f8f8;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0.35);
+  border-radius: 3px;
+  font-family: 'Roboto', sans-serif;
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+  height: 200px;
+}
+.overlay{
+  background-color: rgba(0,0,0,.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+.overlay.active{
+  visibility: visible;
+}
+.negro{
+  color:black;
+}
+.blanco{
+  color: white;
+}
+
+.btn-popup{
+  padding: 10px;
+  height: 20px;
+  line-height: 20px;
+  color: black;
+  background-color: white;
+  border: solid 3px rgb(132,28,156);
+  border-radius: 3px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  transition: .3s ease all;
+  
+  
+}
+.botones-chidos{
+  margin-top: 50px;
+ 
+}
+#visible{
+  visibility: hidden;
+}
+/* Contenedor datos */
+
+
+.kitchen{
+  display: flex;
+  gap: 100px;
+  
+  vertical-align: baseline;
+}
+h3{
+  
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+.si{
+  display: flex;
+  gap: 100px;
+  
+}
+.analitica{
+  width: 120px;
+  margin-top: 80px;
+}
+.usos{
+  padding-top: 0px;
+  background-color: rgb(132,28,156);
+  border: none;
+  color: white;
+  font-size: 20px;
+}
+#popupD{
+  background-color: rgb(132,28,156);
+  border: solid 4px white;
+}
+#btn-aceptarD{
+  background-color: rgb(132,28,156);
+  border: solid 4px white;
+  border-radius: 9px;
+  color: white;
+  font-size: 20px;
+
+}
+/* ---Almacen------------- */
+
+.contenedor_consulta{
+  width: 65%;
+  background-color: gainsboro;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  color: black;
+  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#task-form{
+  width: 100%;
+  margin: 30px auto;
+  display: flex;
+}
+  .btn-delete,.btn-edit{
+  margin-top: 10%;
+}
+
+.nombre,.ubicacion,.unidades,.botones,.indicacion{
+  border: 2px solid black;
+  text-align: center;
+}
+.botones{
+  display: flex;
+  align-items: unset;
+  gap: 1rem;
+  padding-left: 40px;
+}
+.btnAtras{
+height: 37px;
+width: 37px;
+position: absolute;
+top: 250px;
+left: 120px;
+visibility: hidden;
+}
+.btnAtras.active{
+  visibility: visible;
+}
+
+.buscador{
+  background-color: rgb(132,28,156);
+  padding: 10px;
+  margin: 30px auto;
+  border-radius: 30px;
+  border: 4px solid white;
+}
+.eleccion{
+  background-color: rgb(132,28,156);
+  width: 80%;
+  margin: 30px auto;
+  padding: 30px;
+  border: 4px solid white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.eleccion h2{
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.eleccion div{
+  display: flex;
+  justify-content: center;
+  gap: 220px;
+  margin-top: -15px;
+  margin-bottom: 10px;
+}
+.eleccion.active{
+  visibility: hidden;
+}
+.boton2{
+  height: 70px;
+  width: 200px;
+  margin-top: 25px;
+  background-color:rgb(92, 19, 109);
+  border: 3px solid white;
+  color: white;
+  font-size: 1.3rem;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 10px;
+}
+.boton2:hover{
+  cursor: pointer;
+  transform: scale(1.05, 1.05);
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+}
+
+
+.boton2.active{
+  visibility: hidden;
+}
+.filtro{
+  background-color: rgb(132,28,156);
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 30px;
+  border: 4px solid white;
+  display: flex;
+  justify-content: center;
+}
+.filtro.active{
+  visibility: hidden;
+}
+#btnBuscar{
+  margin-left: 30px;
+  margin-top:-10px;
+}
+
+#btn-task-save{
+  margin-left: 20px;
+}
+#task-title,#task-description,#unidades-disponibles{
+  height: 25px;
+ 
+  width: 150px;
+}
+.medidas{
+  height: 25px;
+  width: 150px;
+}
+.contenedor-indicaciones{
+  width: 75%;
+  background-color: rgb(184, 184, 184);
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center ;
+  height: 65px;
+}
+.table_container{
+  width: 75%;
+  background-color: gainsboro;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.indicacion{
+  padding-top: 20px;
+  font-family: 'Roboto', sans-serif; 
+  font-weight: bold;
+  font-size: 16px; 
+  
+}
+.instrucciones{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.instrucciones.active{
+  visibility: visible;
+}
+/*Graficas de almacen*/
+.grafica{
+  width: 85px;
+  margin-right: 20px;
+  display: block;
+  margin-top: -40px;
+}
+.grafica:hover{
+  cursor: pointer;
+}
+.Cbotones{
+  display: flex;
+  justify-content: center;
+  padding: 0 15px 20px 15px;
+}
+.popupG{
+  background-color: #f8f8f8;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0.35);
+  border-radius: 3px;
+  font-family: 'Roboto', sans-serif;
+  padding: 40px;
+  text-align: center;
+  height: 600px;
+}
+#Tarticulos{
+  background-color:  #f8f8f8;
+  border: none;
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

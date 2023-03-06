@@ -1,0 +1,166 @@
+
+@media(max-width: 1045px){
+ /* Cocinas */
+  p{
+    font-size: 1.5rem;
+  }
+  .modulo1 div, .modulo2 div, .modulo3 div, .modulo4 div, .modulo5 div{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Almacen */
+  #task-form{
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #task-form label, input{
+    margin: 5px auto;
+  }
+  #btn-task-save{
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .filtro{
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 80%;
+  }
+  .buscador{
+    width: 80%;
+  }
+  .filtro label{
+    margin: 5px auto;
+  }
+  #btnBuscar{
+    margin: 5px auto;
+  }
+}
+@media (max-width: 720px){
+  /* Index */
+  .contenedor-login{
+    width: 70%;
+    padding: 1rem;
+  }
+  .header{
+    width: 100%;
+    padding: 0;
+  }
+  .footer3{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 0;
+  }
+
+  /* Menu */
+
+  .imagenes_menu{
+    height: 150px;
+  }
+  .opcionA{
+    width: 80%;
+  }
+  .footer4{
+    width: 100%;
+    padding: 0;
+  }
+  /* Cocinas */
+
+  .modulo1, .modulo2, .modulo3, .modulo4, .modulo5{
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1fr;
+    border-bottom: 2px solid rgb(132,28,156);;
+  }
+  .modulo1 div, .modulo2 div, .modulo3 div, .modulo4 div, .modulo5 div{
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .modulo1 div:nth-child(1),
+  .modulo2 div:nth-child(1),
+  .modulo3 div:nth-child(1),
+  .modulo4 div:nth-child(1),
+  .modulo5 div:nth-child(1){
+    justify-content: center;
+    font-size: 1.5rem;
+
+  }
+  .modulo2 div:nth-child(2){
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+  .modulo1 div p, h4, .modulo2 div p, h4, .modulo3 div p, h4, .modulo4 div p, h4, .modulo5 div p, h4{
+    font-size: 1.2rem;
+  }
+  .textSizeCocinas1, .textSizeCocinas11, .textSizeHoras1,
+  .textSizeCocinas2, .textSizeCocinas22, .textSizeHoras2,
+  .textSizeCocinas3, .textSizeCocinas33, .textSizeHoras3,
+  .textSizeCocinas4, .textSizeCocinas44, .textSizeHoras4,
+  .textSizeCocinas5, .textSizeCocinas55, .textSizeHoras5
+  {
+    font-size: 1.2rem;
+  }
+  .popupD{
+    width: 100%;
+    padding: 0;
+  }
+  /* ALMACEN */
+  .eleccion div{
+    flex-direction: column;
+    gap: 0;
+    margin: 0 auto;
+
+  }
+  .contenedor-indicaciones, .table_container{
+    width: 100%;
+  }
+
+}
+@media (max-width: 480px){
+  /* Index */
+  .contenedor-login{
+    width: 90%;
+    padding: 0.5rem;
+  }
+
+  /* Menu */
+  .contenedor{
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    margin-top: 10px;
+  }
+  .imagenes_menu{
+    height: 160px;
+  }
+  .opcionA h2{
+    font-size: 1rem;
+  }
+  /* ALMAMCEN */
+  .btnAtras{
+    left: 65px;
+  }
+  .contenedor-cocinas{
+    padding: 0;
+    padding-left: 10px;
+    width: 100%;
+  }
+  .nombre,.ubicacion,.unidades,.botones,.indicacion{
+    border: 1px solid black;
+  }
+  .table_container h3{
+    font-size: 1rem;
+  }
+  .grafica{
+    display: none;
+  }
+  /* Cocina */
+}

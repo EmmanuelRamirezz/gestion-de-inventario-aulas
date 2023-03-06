@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cocinas</title>
+  <link rel="shortcut icon" href="img/icono.ico">
+ <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:ital,wght@0,700;1,400&  family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header">
+      <img src="img/header.png" alt="Banner">
+    </div>
+  </header>
+  <main>
+    <h1>Estado actual de las cocinas</h1>
+    
+     <div class="contenedor-cocinas">
+       <div class="contenedor-disponible">
+         <!------------------------------------------------>
+         <div class="modulo1">
+          <div>
+            <p>Cocina 1:</p>
+           </div>
+            
+           <div>
+            <div class="PRUEBA">
+              <input type="image" src="img/ocupado.png" id="btn-ocupado1" class="ocupado" onclick="desocupar()">      
+    
+              <input type="image" src="img/comprobado.png" id="btn-cocina1" class="disponible">
+             </div>
+           </div>
+           
+            <div class="visibility1 inactive">
+              <h4 id="cocina1">Ocupado por el grupo: </h4> 
+              <input type="text" class="textSizeCocinas1" id="grupoEstado1" readonly="readonly">
+            </div>
+              
+              
+            <div class="visibility1 inactive">
+              <h4> Docente:</h4>
+              <input type="text" class="textSizeCocinas11" id="docenteEstado1" readonly="readonlyw">
+            </div>
+              
+            <div class="visibility1 inactive">
+              <h4>De:</h4>
+              <input type="text" class="textSizeHoras1" id="Hentrada1" readonly="readonly">
+              <h4>a:</h4>
+              <input type="text" class="textSizeHoras1" id="Hsalida1" readonly="readonly">
+            </div>
+         </div>
+        
+         <!------------------------------------------------>
+         <!------------------------------------------------>
+         <!-- Empieza lo chido -->
+         <div class="modulo2">
+          <div> 
+            <p>Cocina 2:</p> 
+          </div>
+
+          <div class="PRUEBA">
+           <input type="image" src="img/ocupado.png" id="btn-ocupado2" class="ocupado" onclick="desocupar2()">
+           <input type="image" src="img/comprobado.png" id="btn-cocina2" class="disponible">
+          </div>
+ 
+            <!-- Estos 4 divs renian la clase "estado-cocina2" y el id "visibilidad2"-->
+          <div class="visibility2 inactive">
+            <h4 id="cocina2">Ocupado por el grupo: </h4> 
+             <input type="text" class="textSizeCocinas2" id="grupoEstado2" readonly="readonly">
+          </div>
+
+          <div class="visibility2 inactive">
+            <h4> Docente:</h4> 
+             <input type="text" class="textSizeCocinas22" id="docenteEstado2" readonly="readonly">
+          </div>
+             
+          <div class="visibility2 inactive">
+            <h4>De:</h4>
+             <input type="text" class="textSizeHoras2" id="Hentrada2" readonly="readonly">
+             <h4>a:</h4>
+             <input type="text" class="textSizeHoras2" id="Hsalida2" readonly="readonly">
+          </div>
+
+         </div>
+          
+          <!------------------------------------------------>         
+          <!------------------------------------------------>
+          <div class="modulo3">
+            <div>
+              <p>Cocina 3:</p>
+             </div>
+              
+             <div>
+              <div class="PRUEBA">
+                <input type="image" src="img/ocupado.png" id="btn-ocupado3" class="ocupado" onclick="desocupar3()">      
+    
+                <input type="image" src="img/comprobado.png" id="btn-cocina3" class="disponible">
+               </div>
+             </div>
+             
+              <div class="visibility3 inactive">
+                <h4 id="cocina3">Ocupado por el grupo: </h4> 
+                <input type="text" class="textSizeCocinas3" id="grupoEstado3" readonly="readonly">
+              </div>
+                
+                
+              <div class="visibility3 inactive">
+                <h4> Docente:</h4>
+                <input type="text" class="textSizeCocinas33" id="docenteEstado3" readonly="readonly">
+              </div>
+                
+              <div class="visibility3 inactive">
+                <h4>De:</h4>
+                <input type="text" class="textSizeHoras3" id="Hentrada3" readonly="readonly">
+                <h4>a:</h4>
+                <input type="text" class="textSizeHoras3" id="Hsalida3" readonly="readonly">
+              </div>
+           </div>
+          <!------------------------------------------------>         
+          <div class="modulo4">
+            <div>
+              <p>Cocina 4:</p>
+             </div>
+              
+             <div>
+              <div class="PRUEBA">
+                <input type="image" src="img/ocupado.png" id="btn-ocupado4" class="ocupado" onclick="desocupar4()">      
+    
+                <input type="image" src="img/comprobado.png" id="btn-cocina4" class="disponible">
+               </div>
+             </div>
+             
+              <div class="visibility4 inactive">
+                <h4 id="cocina4">Ocupado por el grupo: </h4> 
+                <input type="text" class="textSizeCocinas3" id="grupoEstado4" readonly="readonly">
+              </div>
+                
+                
+              <div class="visibility4 inactive">
+                <h4> Docente:</h4>
+                <input type="text" class="textSizeCocinas44" id="docenteEstado4" readonly="readonly">
+              </div>
+                
+              <div class="visibility4 inactive">
+                <h4>De:</h4>
+                <input type="text" class="textSizeHoras4" id="Hentrada4" readonly="readonly">
+                <h4>a:</h4>
+                <input type="text" class="textSizeHoras4" id="Hsalida4" readonly="readonly">
+              </div>
+           </div>
+          <!------------------------------------------------>         
+          <div class="modulo5">
+            <div>
+              <p>Cocina 5:</p>
+             </div>
+              
+             <div>
+              <div class="PRUEBA">
+                <input type="image" src="img/ocupado.png" id="btn-ocupado5" class="ocupado" onclick="desocupar5()">      
+    
+                <input type="image" src="img/comprobado.png" id="btn-cocina5" class="disponible">
+               </div>
+             </div>
+             
+              <div class="visibility5 inactive">
+                <h4 id="cocina5">Ocupado por el grupo: </h4> 
+                <input type="text" class="textSizeCocinas5" id="grupoEstado5" readonly="readonly">
+              </div>
+                
+                
+              <div class="visibility5 inactive">
+                <h4> Docente:</h4>
+                <input type="text" class="textSizeCocinas55" id="docenteEstado5" readonly="readonly">
+              </div>
+                
+              <div class="visibility5 inactive">
+                <h4>De:</h4>
+                <input type="text" class="textSizeHoras5" id="Hentrada5" readonly="readonly">
+                <h4>a:</h4>
+                <input type="text" class="textSizeHoras5" id="Hsalida5" readonly="readonly">
+              </div>
+           </div>
+          <!------------------------------------------------>         
+
+        </div>
+        <!-- Menú y estadisticas -->
+        <div class="flex">
+          <a href="#" class="estadistica">
+            <img  src="img/estadistica-imagen.png" alt="estadisticas" id="btn-cocinaD" onclick="datos()">
+            <h2 class="regresar-texto">Datos</h2>
+           </a>
+
+          <a href="menu.html" class="regresar">
+           <img  src="img/regreso.png" alt="Menu">
+           <h2 class="regresar-texto">Menú</h2>
+          </a>
+        </div>
+     </div>
+     <!--overlay1 ------------------------------------------------------------------>
+      <div class="overlay" id="overlay">
+          <div class="popup" id="popup">
+            <h2 class="negro">Llene los campos:</h2>
+            <form>
+              <div>
+                <center>
+                <h3>Grupo:</h3>
+                <input type="text" style="width: 300px" id="grupoc1" >
+
+                <h3>Docente:</h3>
+                <input type="text" style="width: 300px" id="docentec1">
+
+                <h3>Hora de llegada:</h3>
+                <input type="text" style="width: 100px" id="llegada1" value="">
+
+                <h3>Hora de salida:</h3>
+                <input type="text" style="width: 100px" id="salida1" value="">
+                </center>
+              </div>
+              <div class="botones-chidos">
+              <a href="#" class="btn-popup" id="btn-aceptar" onclick="enviarTexto1()">Aceptar</a>
+
+              <a href="#" class="btn-popup" id="btn-cerrar">Cancelar</a>
+            </div>
+            </form>
+          </div>
+      </div>
+     <!-- Overlay2 -->
+     <div class="overlay" id="overlay2">
+      <div class="popup" id="popup2">
+        <h2 class="negro">Llene los campos:</h2>
+         <form>
+           <div>
+             <center>
+            <h3>Grupo:</h3>
+            <input type="text" style="width: 300px" id="grupoc2" value="">
+
+            <h3>Docente:</h3>
+            <input type="text" style="width: 300px" id="docentec2" value="">
+
+            <h3>Hora de llegada:</h3>
+            <input type="text" style="width: 100px" id="llegada2" value="">
+
+            <h3>Hora de salida:</h3>
+            <input type="text" style="width: 100px" id="salida2" value="">
+            </center>
+          </div>
+          <div class="botones-chidos">
+          <a href="#" class="btn-popup" id="btn-aceptar2" onclick="enviarTexto2()">Aceptar</a>
+
+          <a href="#" class="btn-popup" id="btn-cerrar2">Cancelar</a>
+        </div>
+        
+         </form>
+      </div>
+   </div>
+   <!-- Overlay3 -->
+   <div class="overlay" id="overlay3">
+    <div class="popup" id="popup3">
+      <h2 class="negro">Llene los campos:</h2>
+       <form>
+         <div>
+           <center>
+          <h3>Grupo:</h3>
+          <input type="text" style="width: 300px" id="grupoc3" value="">
+
+          <h3>Docente:</h3>
+          <input type="text" style="width: 300px" id="docentec3" value="">
+
+          <h3>Hora de llegada:</h3>
+          <input type="text" style="width: 100px" id="llegada3" value="">
+
+          <h3>Hora de salida:</h3>
+          <input type="text" style="width: 100px" id="salida3" value="">
+          </center>
+        </div>
+        <div class="botones-chidos">
+        <a href="#" class="btn-popup" id="btn-aceptar3" onclick="enviarTexto3()">Aceptar</a>
+
+        <a href="#" class="btn-popup" id="btn-cerrar3">Cancelar</a>
+      </div>
+       </form>
+    </div>
+ </div>
+ <!-- Overlay 4 -->
+ <div class="overlay" id="overlay4">
+  <div class="popup" id="popup4">
+    <h2 class="negro">Llene los campos:</h2>
+     <form>
+       <div>
+         <center>
+        <h3>Grupo:</h3>
+        <input type="text" style="width: 300px" id="grupoc4" value="">
+
+        <h3>Docente:</h3>
+        <input type="text" style="width: 300px" id="docentec4" value="">
+
+        <h3>Hora de llegada:</h3>
+        <input type="text" style="width: 100px" id="llegada4" value="">
+
+        <h3>Hora de salida:</h3>
+        <input type="text" style="width: 100px" id="salida4" value="">
+        </center>
+      </div>
+      <div class="botones-chidos">
+      <a href="#" class="btn-popup" id="btn-aceptar4" onclick="enviarTexto4()">Aceptar</a>
+
+      <a href="#" class="btn-popup" id="btn-cerrar4">Cancelar</a>
+    </div>
+     </form>
+  </div>
+</div>
+<!-- Overlay 5 -->
+<div class="overlay" id="overlay5">
+  <div class="popup" id="popup5">
+    <h2 class="negro">Llene los campos:</h2>
+     <form>
+       <div>
+         <center>
+        <h3>Grupo:</h3>
+        <input type="text" style="width: 300px" id="grupoc5" value="">
+
+        <h3>Docente:</h3>
+        <input type="text" style="width: 300px" id="docentec5" value="">
+
+        <h3>Hora de llegada:</h3>
+        <input type="text" style="width: 100px" id="llegada5" value="">
+
+        <h3>Hora de salida:</h3>
+        <input type="text" style="width: 100px" id="salida5" value="">
+        </center>
+      </div>
+      <div class="botones-chidos">
+      <a href="#" class="btn-popup" id="btn-aceptar5" onclick="enviarTexto5()">Aceptar</a>
+
+      <a href="#" class="btn-popup" id="btn-cerrar5">Cancelar</a>
+    </div>
+     </form>
+  </div>
+</div>
+<!-- Overlay Graficas -->
+<div class="overlay" id="overlayD">
+  <div class="popupD" id="popupD">
+    
+     <form>
+       <div class="si">
+          <center>
+            <div class="contenedor-datos">
+              <h2>Usos de las cocinas el dia de hoy</h2>
+            <canvas id="myChart" width="450" height="450"></canvas>
+   
+          </div>
+        </center> 
+      </div>
+      <div class="botones-chidos">
+      <a href="#" class="btn-popup" id="btn-aceptarD">Aceptar</a>
+     </div>
+     </form>
+  </div>
+</div>
+
+
+ </main>
+ <footer>
+   <div class="footer">
+     <img src="img/footer.png" alt="footer">
+  </div>
+ </footer>
+  <script src="js/scripts.js"></script>
+  
+</body>
+</html>
